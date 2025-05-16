@@ -398,9 +398,9 @@ def create_comparison_bar(weighted_value, unweighted_value):
     ))
 
     fig.update_layout(
-    title=dict(
-        text="Weighted vs Theoretical Maximum Comparison",
-        font=dict(color='white', size=16)
+        title=dict(
+            text="Weighted vs Theoretical Maximum Comparison",
+            font=dict(color='white', size=16)
     ),
     yaxis=dict(
         range=[0, 100],
