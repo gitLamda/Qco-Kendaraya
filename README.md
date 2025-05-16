@@ -63,19 +63,22 @@ The application aggregates model outputs into a final score, presents visual ins
    cd qco-kendara
 
 2. **Create and activate a virtual environment**
+   ```bash
    python3 -m venv .venv
    source .venv/bin/activate    # macOS/Linux
    .venv\Scripts\activate       # Windows
 
-3. **Install dependencies**
+4. **Install dependencies**
+   ```bash
    pip install -r requirements.txt
 
-4. **Place model files in the project root**
+6. **Place model files in the project root**
     - new_rf_qco.pkl
     - lr_qco.pkl
     - qco_predictor.pkl
 
-5. **Run the app**
+7. **Run the app**
+   ```bash
    streamlit run app.py
 
 **Contributing**
