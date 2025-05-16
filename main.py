@@ -420,7 +420,7 @@ def create_comparison_bar(weighted_value, unweighted_value):
     plot_bgcolor='rgba(0,0,0,0)',
     height=400
 )
-return fig
+    return fig
 
 
 # Main app
