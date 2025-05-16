@@ -24,7 +24,7 @@ st.markdown("""
 
     /* Background image */
     .stApp {
-        background-image: url("https://img.freepik.com/free-vector/zodiac-wheel-space-background_23-2148181807.jpg?t=st=1743646737~exp=1743650337~hmac=471f9ed87fae1c1368f06737fe57b05ec166dae80eabc58f9a90bf3ae2681bc7&w=900");
+        background-image: url("https://cdn.pixabay.com/photo/2013/03/24/11/10/horoscope-96309_1280.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
