@@ -1,0 +1,7 @@
+streamlit
+pandas
+numpy
+plotly
+openpyxl      # for reading Excel files
+scikit-learn  # if your pickled models need it
+pickle
