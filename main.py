@@ -324,14 +324,16 @@ def create_comparison_chart(values, titles, colors):
         },
         height=400,
         yaxis=dict(
-            title="Hit Rate (%)",
             range=[0, 100],
-            titlefont=dict(color='white'),  # White y-axis title
-            tickfont=dict(color='white')  # White y-axis labels
-        ),
-        xaxis=dict(
-            tickfont=dict(color='white')  # White x-axis labels
-        ),
+            title=dict(
+                text="Hit Rate (%)",
+                font=dict(color='white')
+            ),
+            tickfont=dict(color='white')   # <— y‑axis tick labels
+    ),
+    xaxis=dict(
+        tickfont=dict(color='white')   # <— x‑axis tick labels
+    ),
         legend=dict(
             font=dict(color='white')  # White legend text
         ),
@@ -396,23 +398,30 @@ def create_comparison_bar(weighted_value, unweighted_value):
     ))
 
     fig.update_layout(
-        title={
-            'text': "Weighted vs Theoretical Maximum Comparison",
-            'font': {'color': 'white', 'size': 16}
-        },
-        yaxis={
-            'title': 'Prediction Percentage',
-            'range': [0, 100],
-            'titlefont': {'color': 'white'},
-            'tickfont': {'color': 'white'}
-        },
-        xaxis={'tickfont': {'color': 'white'}},
-        legend={'font': {'color': 'white'}},
-        paper_bgcolor='rgba(0,0,0,0)',
-        plot_bgcolor='rgba(0,0,0,0)',
-        height=400
-    )
-    return fig
+    title=dict(
+        text="Weighted vs Theoretical Maximum Comparison",
+        font=dict(color='white', size=16)
+    ),
+    yaxis=dict(
+        range=[0, 100],
+        title=dict(
+            text="Prediction Percentage",
+            font=dict(color='white')
+        ),
+        tickfont=dict(color='white')
+    ),
+    xaxis=dict(
+        tickfont=dict(color='white')
+    ),
+    legend=dict(
+        font=dict(color='white')
+    ),
+    paper_bgcolor='rgba(0,0,0,0)',
+    plot_bgcolor='rgba(0,0,0,0)',
+    height=400
+)
+return fig
+
 
 # Main app
 def main():
